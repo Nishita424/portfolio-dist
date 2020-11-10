@@ -1,104 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Contact Me | Software Engineer</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
-            rel="stylesheet" />
-        <link rel="stylesheet" href="css/main.css" />
-        <title>Contact Me | Software Engineer</title>
-    </head>
+  <body>
+    <!-- Header  -->
+    <header id="header-inner">
+      <div class="overlay">
+        <div class="container">
+          <nav id="main-nav">
+            <img src="img/logoo.png" alt="my-portfolio" id="logo" />
+            <!-- <div id="logo">NG</div> -->
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="work.html">Work</a></li>
+              <!-- <li><a href="https://nishita-skills-resume">Sills-Timeline</a></li> -->
+              <li><a href="contact.html" class="current">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-    <body>
-        <!-- Header  -->
-        <header id="header-inner">
-            <div class="overlay">
-                <div class="container">
-                    <nav id="main-nav">
-                        <img src="img/logo.png" alt="my-portfolio" id="logo" />
-                        <!-- <div id="logo">NG</div> -->
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="work.html">Work</a></li>
-                            <li><a href="contact.html" class="current">Contact</a></li>
-                        </ul>
-                    </nav>
+    <!-- Section-A: Contact form  -->
+    <section id="contact-a" class="text-center py-3">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Here is how you can reach me</p>
+        <form action="process.php" method="POST">
+          <div class="text-fields">
+            <input
+              type="text"
+              class="text-input name-input"
+              placeholder="Name"
+              ,
+              name="name"
+              ,
+              id="name"
+            />
+            <input
+              type="text"
+              class="text-input subject-input"
+              placeholder="Subject"
+              ,
+              id="subject"
+              ,
+              name="subject"
+            />
+            <input
+              type="email"
+              class="text-input email-input"
+              placeholder="Email Address"
+              ,
+              name="email"
+              ,
+              id="email"
+            />
+            <input
+              type="text"
+              class="text-input phone-input"
+              placeholder="Phone Number"
+              ,
+              name="phone"
+              ,
+              id="phone"
+            />
+            <textarea
+              class="text-input message-input"
+              placeholder="Enter Message.."
+              ,
+              name="message"
+              ,
+              id="message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-dark">Submit</button>
+        </form>
+      </div>
+    </section>
 
-                </div>
-            </div>
-        </header>
+    <!-- Section-B: Contact Info  -->
+    <section id="contact-b" class="py-3 bg-dark">
+      <div class="container">
+        <div class="contact-info">
+          <div>
+            <i class="fas fa-envelope fa-2x"></i>
+            <h2>Email</h2>
+            <p>nishitaoct26@gmail.com</p>
+          </div>
+          <div>
+            <i class="fas fa-phone fa-2x"></i>
+            <h2>Phone</h2>
+            <p>9999999999</p>
+          </div>
+          <div>
+            <i class="fas fa-address-card fa-2x"></i>
+            <h2>Address</h2>
+            <p>Danavaipeta, Rajahmundry.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Section-A: Contact form  -->
-        <section id="contact-a" class="text-center py-3">
-            <div class="container">
-                <h2 class="section-title">Contact Me</h2>
-                <div class="bottom-line"></div>
-                <p class="lead">Here is how you can reach me</p>
-                <form action="">
-                    <div class="text-fields">
-                        <input type="text" class="text-input name-input"
-                            placeholder="Name">
-                        <input type="text" class="text-input subject-input"
-                            placeholder="Subject">
-                        <input type="email" class="text-input email-input"
-                            placeholder="Email Address">
-                        <input type="text" class="text-input phone-input"
-                            placeholder="Phone Number">
-                        <textarea class="text-input message-input"
-                            placeholder="Enter Message.."></textarea>
-                    </div>
-                    <button type="submit" class="btn-dark">Submit</button>
-                </form>
-            </div>
-        </section>
+    <!-- Section-C: Tagline  -->
+    <section id="contact-c" class="bg-main py-4">
+      <h1>Let's Start Your Next Project !</h1>
+    </section>
 
-        <!-- Section-B: Contact Info  -->
-        <section id="contact-b" class="py-3 bg-dark">
-            <div class="container">
-                <div class="contact-info">
-                    <div>
-                        <i class="fas fa-envelope fa-2x"></i>
-                        <h2>Email</h2>
-                        <p>nishitaoct26@gmail.com</p>
-                    </div>
-                    <div>
-                        <i class="fas fa-phone fa-2x"></i>
-                        <h2>Phone</h2>
-                        <p>9999999999</p>
-                    </div>
-                    <div>
-                        <i class="fas fa-address-card fa-2x"></i>
-                        <h2>Address</h2>
-                        <p>Danavaipeta, Rajahmundry.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Footer  -->
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <p>Copyright &copy; 2020, All rights reserved</p>
+        <div class="social">
+          <!-- <i class="fab fa-twitter"></i> -->
+          <a
+            href="https://facebook.com/nishita.giduturi.5"
+            class="fb"
+            target="_blank"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://github.com/Nishita7" class="git" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/gni/"
+            class="lin"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://hackerrank.com/Nishita7" target="_blank">
+            <i class="fab fa-hackerrank"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
 
-        <!-- Section-C: Tagline  -->
-        <section id="contact-c" class="bg-main py-4">
-            <h1>Let's Start Your Next Project !</h1>
-        </section>
-
-        <!-- Footer  -->
-        <footer id="main-footer">
-            <div class="footer-content container">
-                <p>Copyright &copy; 2020, All rights reserved</p>
-                <div class="social">
-                    <!-- <i class="fab fa-twitter"></i> -->
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-github"></i>
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-hackerrank"></i>
-                </div>
-            </div>
-        </footer>
-
-        <!-- Type effect  -->
-        <script src="js/typewriter.js"></script>
-    </body>
-
+    <!-- Type effect  -->
+    <script src="js/typewriter.js"></script>
+  </body>
 </html>

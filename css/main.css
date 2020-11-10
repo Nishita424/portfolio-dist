@@ -24,9 +24,9 @@
   color: #f4f4f4;
   background-color: #333; }
 
-button[class^="btn-"]:hover,
-a[class^="btn-"]:hover,
-input[class^="btn-"]:hover {
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
   background-color: #ffbc00; }
 
 .bg-main {
@@ -91,6 +91,9 @@ input[class^="btn-"]:hover {
   background: #ffbc00;
   display: block;
   margin: 0 auto 1rem auto; }
+
+.bg-primary {
+  background-color: #ffbc00; }
 
 .items {
   display: grid;
@@ -170,7 +173,7 @@ input[class^="btn-"]:hover {
   padding: 0; }
 
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: 'Dosis', sans-serif;
   line-height: 1.6;
   background: #fff; }
 
@@ -220,7 +223,7 @@ img {
   color: #fff;
   position: relative; }
   #header-home .overlay:before {
-    content: "";
+    content: '';
     background: url("../img/showcase1.jpg") no-repeat center right/cover;
     position: absolute;
     top: 0;
@@ -242,7 +245,7 @@ img {
   border-bottom: 3px solid #ffbc00;
   position: relative; }
   #header-inner .overlay:before {
-    content: "";
+    content: '';
     background: url("../img/showcase1.jpg") no-repeat 20% 30%/cover;
     position: absolute;
     top: 0;
@@ -304,7 +307,7 @@ img {
 
 #about-c .about-logos {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(11, 1fr);
   grid-gap: 1rem; }
   #about-c .about-logos img {
     height: 100px;
@@ -312,7 +315,7 @@ img {
 
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: "name email" "subject phone" "message message";
+  grid-template-areas: 'name email' 'subject phone' 'message message';
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem; }
   #contact-a .text-fields .name-input {
@@ -329,7 +332,7 @@ img {
   #contact-a .text-fields .text-input {
     padding: 0.5rem 1rem; }
 
-#contact-a button[type="submit"] {
+#contact-a button[type='submit'] {
   width: 40%;
   margin-top: 1rem; }
 
@@ -351,18 +354,22 @@ img {
     justify-content: space-between;
     align-items: center; }
     #main-footer .footer-content .social .fab {
-      margin-right: 1rem;
       border: 2px #fff solid;
       border-radius: 50%;
       height: 20px;
       width: 20px;
       line-height: 20px;
       text-align: center;
-      padding: 0.5rem; }
+      padding: 0.5rem;
+      background: #f4f4f4; }
       #main-footer .footer-content .social .fab:hover {
         background: #ffbc00; }
       #main-footer .footer-content .social .fab:last-child {
         margin: 0; }
+    #main-footer .footer-content .social .fb,
+    #main-footer .footer-content .social .lin,
+    #main-footer .footer-content .social .git {
+      margin-right: 1rem; }
 
 @media (max-width: 1300px) {
   #about-c .about-logos {
