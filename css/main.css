@@ -421,7 +421,7 @@ img {
 
 #contact-b .contact-info {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   text-align: center;
 }
 
@@ -530,11 +530,20 @@ img {
   #contact-a .text-fields {
     grid-template-areas: 'name' 'subject' 'email' 'phone' 'message';
   }
-  #contact-b div {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px #555 dotted;
-  }
+  /* #contact-b .container .contact-info {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  } */
+  /* #contact-b div { */
+  /* margin-bottom: 1rem;
+    padding-bottom: 1rem; */
+  /* border-bottom: 1px #555 dotted; */
+  /* } */
   #contact-b div:last-child {
     border: none;
     margin-bottom: 0;
